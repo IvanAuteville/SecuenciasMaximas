@@ -9,15 +9,18 @@ public class SecuenciasMaximas
 	int secuenciaAux = 0;
 	int[] output = null;
 
-	
 	for (int n = 0; n < input.length; n++)
 	{
 	    if (esValido(input[n]))
 	    {
 		valoresValidos++;
 		secuenciaAux++;
-		
-		secuenciaMax = secuenciaAux;
+
+		if (secuenciaMax < secuenciaAux)
+		{
+		    secuenciaMax = secuenciaAux;
+		}
+
 	    } else
 	    {
 		secuenciaAux = 0;
@@ -42,7 +45,7 @@ public class SecuenciasMaximas
     {
 	if (i % 2 != 0 && i % 3 != 0 && i % 5 != 0)
 	{
-	   return true;
+	    return true;
 	}
 
 	return false;

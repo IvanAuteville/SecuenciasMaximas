@@ -15,8 +15,8 @@ public class SecuenciasMaximasTest
 
 	try
 	{
-	    scanner = new LeerConScanner("", "secmax.in");
-	    escritor = new EscribirConPrintWriter("", "secmax.out");
+	    scanner = new LeerConScanner("E:\\Program Files (x86)\\Programas\\Eclipse\\Workspace\\SecuenciasMaximas\\test\\", "secmax0.in");
+	    escritor = new EscribirConPrintWriter("E:\\Program Files (x86)\\Programas\\Eclipse\\Workspace\\SecuenciasMaximas\\test\\", "secmax0.out");
 	} catch (IOException e)
 	{
 	}
