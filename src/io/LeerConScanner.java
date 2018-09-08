@@ -2,7 +2,6 @@ package io;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class LeerConScanner
@@ -14,7 +13,6 @@ public class LeerConScanner
     {
 	File archivo = new File(path + fileName);
 	sc = new Scanner(archivo);
-	sc.useLocale(Locale.ENGLISH);
     }
 
     public int[] LeerInt()
